@@ -1,0 +1,8 @@
+#livesearch{
+        position: absolute;        
+        z-index: 999;
+		width: 280px;
+        top: 100%;
+        right:98;
+		text-align:center;
+    }

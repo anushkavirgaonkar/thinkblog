@@ -1,0 +1,84 @@
+.container
+{
+ position: absolute;
+ left: 420px;
+ margin: 20px;
+ margin-top: 100px;
+ max-width: 500px;
+ background-color: #FFFFFF;
+ opacity: 1;
+ padding: 50px;
+ display: inline-block;
+ text-align: center;
+ border-radius:30px;
+} 
+
+.btn
+{
+ background-color: #4CAF50;
+ color: white;
+ margin-top: 20px;
+ padding: 20px 50px;
+ border: none;
+ cursor: pointer;
+ width: 100%;
+ opacity: 0.75;
+}
+.btn:hover
+{
+ opacity:1;
+}
+
+
+.loginbox
+{
+ position: absolute; 	
+ width: 600px;
+ background-color: #FFFFFF;
+ opacity: 1;
+ display: inline-block;
+ text-align: center;
+ border-radius:30px;
+ margin:auto;
+ margin-right:400px;
+}
+.registerbox
+{
+ margin-left:400px;	
+ margin-top: 30px;
+ width: 450px;
+ padding: 0px;
+ background-color: #FFFFFF;
+ opacity: 1;
+ display: inline-block;
+ text-align: center;
+ border-radius:30px;
+ margin-bottom:40px;
+}
+#register
+{
+ margin-top:40px;
+}
+.buttoninform
+{
+ background-color: #4CAF50;
+ color: white;
+ margin-top: 20px;
+ padding: 20px 50px;
+ border: none;
+ cursor: pointer;
+ width: 200px;
+ opacity: 1;
+}
+
+.buttonregister
+{
+ background-color: #4CAF50;
+ color: white;
+ margin-top: 20px;
+ padding: 10px 20px;
+ border: none;
+ cursor: pointer;
+ width: 200px;
+ opacity: 1;
+}

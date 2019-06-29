@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title="LOGIN">
+  </title> 
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="bg">
+   <form name="myForm" action="home.php" method="POST" class="container"  id = "login"  >
+	<p class="textinform">USERNAME</p>
+	<input name="funame" type="text" required></input>
+	</br>
+	<p class="textinform">PASSWORD</p>
+	<input name="fpass" type="password" required></input>
+	</br>
+	<button type="submit" class="buttoninform" style="margin-bottom:50px"><b>SUBMIT</b></button>
+  </div>
+
+</body>
+</html>
+
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') 
+{
+
+	$uname = $_POST['funame'];
+	$pass = $_POST['fpass'];
+
+	// sql connectivity
+
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	$db = "users";
+
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $db);
+
+	// Check connection
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	} 
+
+	$sql = "SELECT * FROM users WHERE username = '$uname' AND password = '$pass' ";
+
+	if ($conn->query($sql) === TRUE) {
+		header("Location: localhost/wtmini/home.html"); /* Redirect browser */
+	} else {
+		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+
+	$conn->close();
+}
+
+
+?>
